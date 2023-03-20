@@ -8,9 +8,7 @@ As of the time of this repository creation, there is no known Group Policy or re
 This script edits the local Edge Preferences file to turn this setting off. (It also closes Edge if it's running, as this is a requirement to make changes to the file.)
 
 Since it is run in local context, deploying it on a large scale could be done via SignIn.bat script (if your company uses one). For example:
-
-Add the script to a folder that is accessible company-wide, such as \\\yourdomain.com\NETLOGON
-
-Add a line to your SignIn batch file like "powershell -ExecutionPolicy Bypass -File \\\yourdomain.com\NETLOGON\TurnOFF-EdgePasswordAutosave.ps1"
+- Add the script to a folder that is accessible company-wide, such as \\\yourdomain.com\NETLOGON
+- Add a line to your SignIn batch file like "powershell -ExecutionPolicy Bypass -File \\\yourdomain.com\NETLOGON\TurnOFF-EdgePasswordAutosave.ps1"
 
 (As with everything, please thoroughly test and vet scripting before large deployments.)
